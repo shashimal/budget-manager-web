@@ -5,6 +5,7 @@ import {Layout} from 'antd';
 import ExpenseList from "../expense/ExpenseList";
 import IncomeList from "../income/IncomeList";
 import BudgetList from "../budget/BudgetList";
+import CategoryList from "../category/CategoryList";
 
 const {Content} = Layout;
 
@@ -25,6 +26,7 @@ const AppContent = () => {
                     <Route path='/expense' component={ExpenseList} />
                     <Route path='/income' component={IncomeList} />
                     <Route path='/budget' component={BudgetList} />
+                    <Route path='/categories' component={CategoryList} />
                 </Switch>
             </Content>
         </Layout>

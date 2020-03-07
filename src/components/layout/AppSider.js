@@ -1,6 +1,6 @@
 import React from "react";
 import {Layout, Menu} from 'antd';
-import {RiseOutlined, FallOutlined, NotificationOutlined} from '@ant-design/icons';
+import {RiseOutlined, FallOutlined, NotificationOutlined,GoldOutlined} from '@ant-design/icons';
 import {Link} from "react-router-dom";
 
 const {Sider} = Layout;
@@ -10,6 +10,7 @@ const AppSider = () => {
     return (
         <Sider width={200} className="site-layout-background">
             <Menu
+                theme='dark'
                 mode="inline"
                 style={{height: '100%', borderRight: 0}}
             >
@@ -29,6 +30,12 @@ const AppSider = () => {
                     <NotificationOutlined/>
                     <span>Budget Plan</span>
                     <Link to="/budget"/>
+                </Menu.Item>
+
+                <Menu.Item key="4">
+                    <GoldOutlined />
+                    <span>Categories</span>
+                    <Link to="/categories"/>
                 </Menu.Item>
             </Menu>
         </Sider>
